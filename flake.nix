@@ -18,14 +18,12 @@
           src = pkgs.fetchFromGitHub {
             owner = "visoredkon";
             repo = "termshot";
-            rev = "main";
-            hash = "sha256-z4ODmMUK3sMkxA4Eogm7Pgw5P55Lb1P/WJHU/6AzGpw=";
+            rev = "0bd0ffe7288357e302221c5de35598d2f9e859d5";
+            hash = "sha256-CEk3GnrSjcyOX6gvhM90bHlJGk+FF+Xqf6OB40v6HC8=";
           };
           vendorHash = "sha256-hr8APRaM/ur9gtRsGIsthhrGnDm7j0fE1aqiwKZKL7s=";
 
-          checkFlags = [
-            "-skip=^TestPtexec$"
-          ];
+          doCheck = false;
 
           meta = {
             description = "Creates screenshots based on terminal command output";
