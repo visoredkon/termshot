@@ -40,9 +40,9 @@ import (
 )
 
 const (
-	red    = "#ED655A"
-	yellow = "#E1C04C"
-	green  = "#71BD47"
+	red    = "#f38ba8"
+	yellow = "#f9e2af"
+	green  = "#a6e3a1"
 )
 
 const (
@@ -56,7 +56,7 @@ var commandIndicator = func() string {
 		return val
 	}
 
-	return "➜"
+	return "pahril@nixu ~\n❯"
 }()
 
 type Scaffold struct {
